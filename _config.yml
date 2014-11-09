@@ -1,4 +1,18 @@
-highlighter: pygments
-safe:       true
-lsi:        false
-encoding:   utf-8
+# Permalinks
+permalink:              pretty
+relative_permalinks:    true
+
+# Setup
+highlighter:        pygments
+safe:               true
+lsi:                false
+encoding:           utf-8
+title:              Code Is Great
+tagline:            About Code
+url:                http://codeisgreat.org/
+paginate:           1
+baseurl:            /codeisgreat
+author:
+  name:             Pankaj Jangid
+  url:              https://twitter.com/codeisgreat
+  email:            pankaj.jangid@gmail.com
