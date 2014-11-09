@@ -7,7 +7,7 @@ highlighter:        pygments
 safe:               true
 lsi:                false
 encoding:           utf-8
-title:              Code Is Great
+title:              "@CodeIsGreat"
 tagline:            About Code
 url:                http://codeisgreat.org/
 paginate:           1
