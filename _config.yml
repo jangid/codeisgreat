@@ -11,7 +11,7 @@ title:              Code Is Great
 tagline:            About Code
 url:                http://codeisgreat.org/
 paginate:           1
-baseurl:            /codeisgreat
+baseurl:            ""
 author:
   name:             Pankaj Jangid
   url:              https://twitter.com/codeisgreat
