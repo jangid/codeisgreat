@@ -1,4 +1,2 @@
-codeisgreat
-===========
+# Project - Code Is Great
 
-CodeIsGreat Blog
