@@ -1,9 +1,10 @@
 #+TITLE: ... Hello.
+#+OPTIONS: toc:nil, num:nil, html-preamble:nil, html-postamble:nil, 
 
 I am Pankaj Jangid and this is my *own* space. Follow this page to get updates from me. Usually this is more current than my twitter and fb timelines.
 
 * Reading
-  - Currently reading this neatly written article on lighting from Tylor G. Lung's blog. [[https://taylor.gl/blog/9/][How to walk upright and stop living in a cave]].
+  - Currently reading this neatly written article on indoor lighting, ventilation, humidity, temperature and other parameters that affect our lives. This is from Tylor G. Lung's blog. Go read → [[https://taylor.gl/blog/9/][How to walk upright and stop living in a cave]].
 
 
 
