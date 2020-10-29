@@ -5,7 +5,9 @@ I am Pankaj Jangid and this is my *own* space. Follow this page to get updates f
 
 * Reading
   - [[https://tools.ietf.org/html/rfc6749][The OAuth 2.0 Authorization Framework]]
+
     Working on a tiny hello-world kind-of appication for learning something. But I don't want to re-implement authentication part. This has been done a million times by so many programmers. So I pulled a [[https://hub.docker.com/r/jboss/keycloak][Keycloak]] image from the Docker Hub. And spawned it. Great work indeed.
+
     But how can I just sit and watch it work. As always. Lost in the W~E~B. First [[https://www.keycloak.org/documentation][Keycloak docs]] → [[https://openid.net/connect/][OpenID]] → [[https://tools.ietf.org/html/rfc6749][OAuth]].
 
 * To Read
@@ -14,6 +16,7 @@ I am Pankaj Jangid and this is my *own* space. Follow this page to get updates f
 
 * Done Reading
   - [[https://taylor.gl/blog/9/][How to walk upright and stop living in a cave]]
+
     This is a neatly written article on indoor lighting, ventilation, humidity, temperature and other parameters that affect our lives. This is from Tylor G. Lung's blog. Go read. Some really practical and useful advices there.
 
 
