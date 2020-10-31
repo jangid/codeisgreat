@@ -6,7 +6,7 @@ I am Pankaj Jangid and this is my *own* space. Follow this page to get updates f
 * Recently read or currently reading
   - [[https://turnerj.com/blog/a-better-mousetrap][A Better Mousetrap]]
 
-    This is a nice write-up on product launch journey. So many people think that it is a small thing to just try out and fail. No. Even if you are building a small /thing/, it is going to take some time. It is difficult to keep the hope alive. And the ones who do it, they really make it *big*.
+    This is a nice write-up on product launch journey. So many people think that it is a small thing to just try out and fail. No. Even if you are building a small /thing/, it is going to take some time. It is difficult to keep the hope alive. And the ones who do it, they really make it /big/.
     
   - [[https://lwn.net/SubscriberLink/835599/f3b49b022582e03e/][Packaging Kubernetes for Debian]]
 
