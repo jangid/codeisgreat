@@ -1,7 +1,8 @@
-#+TITLE: ... Hello.
+#+TITLE: ... Hello. I'm Pankaj Jangid
+#+SUBTITLE: I write code.
 #+OPTIONS: toc:nil, num:nil, html-preamble:nil, html-postamble:nil, 
 
-I am Pankaj Jangid and this is my *own* space. Follow this page to get updates from me. Usually this is more current than my twitter and fb timelines. If you have any comments or just want to say hello then write to me at my.firstname@domain.of.this.web.site.
+This is my *own* space. Follow this page to get updates from me. Usually this is more current than my twitter and fb timelines. If you have any comments or just want to say hello then write to me at my.firstname@domain.of.this.web.site.
 
 * Recently read or currently reading
   - [[https://turnerj.com/blog/a-better-mousetrap][A Better Mousetrap]]
