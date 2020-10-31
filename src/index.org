@@ -1,4 +1,4 @@
-#+TITLE: ... Hello. I'm Pankaj Jangid
+#+TITLE: Hello. I'm Pankaj Jangid
 #+SUBTITLE: I write code.
 #+OPTIONS: toc:nil, num:nil, html-preamble:nil, html-postamble:nil, 
 
