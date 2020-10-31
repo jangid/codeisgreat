@@ -1,0 +1,17 @@
+#+TITLE: OAuth
+
+*This article should be useful if you are implementing OAuth in your own library.*
+
+OAuth defines four roles:
+
+1. Resource owner
+2. Resource server
+3. Client
+4. Authorization server
+
+The interaction between the authorization server and the resource server is not defined by the OAuth 2.0 specification. They may choose any protocol which could be completely private. Or a single server may act as resource server as well as authorization server.
+
+A single authorization server may be used for multiple resources servers. You might have see this already. Popularly known as Single Sign On (SSO), this could be an implementation of OAuth at work. Other kinds of SSOs are also possible. For example, using Security Assertion Markup Language (SAML).
+
+* TODO Diagram
+

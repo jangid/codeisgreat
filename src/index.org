@@ -3,14 +3,18 @@
 
 I am Pankaj Jangid and this is my *own* space. Follow this page to get updates from me. Usually this is more current than my twitter and fb timelines.
 
-* Reading
-  - [[https://tools.ietf.org/html/rfc6749][The OAuth 2.0 Authorization Framework]]
+* Recently read or currently reading
+  - [[https://lwn.net/SubscriberLink/835599/f3b49b022582e03e/][Packaging Kubernetes for Debian]]
 
+    This arcticle clarifies why you are not seeing and perhaps won't see Kubernetes in any stable version of Debian in the near future. Debian Technical Committee (TC) will have to either change rules if they want it to bring into Debian Stable /or/ they may just keep Kubernetes in the Debian Testing repository, where they don't have any hard commitment towards security.
+     
+  - [[https://tools.ietf.org/html/rfc6749][The OAuth 2.0 Authorization Framework]]:
+    
     Working on a tiny hello-world kind-of appication for learning something. But I don't want to re-implement authentication part. This has been done a million times by so many programmers. So I pulled a [[https://hub.docker.com/r/jboss/keycloak][Keycloak]] image from the Docker Hub. And spawned it. Great work indeed.
 
     But how can I just sit and watch it work. As always. Lost in the W~E~B. First [[https://www.keycloak.org/documentation][Keycloak docs]] → [[https://openid.net/connect/][OpenID]] → [[https://tools.ietf.org/html/rfc6749][OAuth]].
 
-* To Read
+* Reading list
   - [[https://fasterthanli.me/series/making-our-own-executable-packer/part-1][What's in a Linux executable?]]
   - [[https://openid.net/connect/][OpenID Connect]]
 
