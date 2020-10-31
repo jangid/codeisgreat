@@ -1,7 +1,7 @@
 #+TITLE: ... Hello.
 #+OPTIONS: toc:nil, num:nil, html-preamble:nil, html-postamble:nil, 
 
-I am Pankaj Jangid and this is my *own* space. Follow this page to get updates from me. Usually this is more current than my twitter and fb timelines.
+I am Pankaj Jangid and this is my *own* space. Follow this page to get updates from me. Usually this is more current than my twitter and fb timelines. If you have any comments or just want to say hello then write to me at my.firstname@domain.of.this.web.site.
 
 * Recently read or currently reading
   - [[https://lwn.net/SubscriberLink/835599/f3b49b022582e03e/][Packaging Kubernetes for Debian]]
@@ -12,7 +12,7 @@ I am Pankaj Jangid and this is my *own* space. Follow this page to get updates f
     
     Working on a tiny hello-world kind-of appication for learning something. But I don't want to re-implement authentication part. This has been done a million times by so many programmers. So I pulled a [[https://hub.docker.com/r/jboss/keycloak][Keycloak]] image from the Docker Hub. And spawned it. Great work indeed.
 
-    But how can I just sit and watch it work. As always. Lost in the W~E~B. First [[https://www.keycloak.org/documentation][Keycloak docs]] → [[https://openid.net/connect/][OpenID]] → [[https://tools.ietf.org/html/rfc6749][OAuth]].
+    But how can I just sit and watch it work. As always. Lost in the web. First [[https://www.keycloak.org/documentation][Keycloak docs]] → [[https://openid.net/connect/][OpenID]] → [[https://tools.ietf.org/html/rfc6749][OAuth]].
 
 * Reading list
   - [[https://fasterthanli.me/series/making-our-own-executable-packer/part-1][What's in a Linux executable?]]
