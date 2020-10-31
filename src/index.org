@@ -4,6 +4,10 @@
 I am Pankaj Jangid and this is my *own* space. Follow this page to get updates from me. Usually this is more current than my twitter and fb timelines. If you have any comments or just want to say hello then write to me at my.firstname@domain.of.this.web.site.
 
 * Recently read or currently reading
+  - [[https://turnerj.com/blog/a-better-mousetrap][A Better Mousetrap]]
+
+    This is nice write-up on product launch journey. So many people think that it is a small thing to just try out and fail. No. Even if you are building a small product, it is going to take some time. It is difficult to keep the hope alive. And the ones who do it, they make it really *big*.
+    
   - [[https://lwn.net/SubscriberLink/835599/f3b49b022582e03e/][Packaging Kubernetes for Debian]]
 
     This arcticle clarifies why you are not seeing and perhaps won't see Kubernetes in any stable version of Debian in the near future. Debian Technical Committee (TC) will have to either change rules if they want it to bring into Debian Stable /or/ they may just keep Kubernetes in the Debian Testing repository, where they don't have any hard commitment towards security.
