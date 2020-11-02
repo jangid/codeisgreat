@@ -1,7 +1,12 @@
 #+TITLE: OAuth
 
-*This article should be useful if you are implementing OAuth in your own library.*
+*This article should be useful if you are implementing OAuth in your own project or library.*
 
+When you start creating a multi-user application, one of the key components, apart from the core functionality of your application, is an authorization framework.
+
+It is not necessary to manage identities inside your application. Single-SignOn (SSO) is so common now. I will use the standard terminology in this article so that you are not lost if you ever want to refer to the original RFCs that define the protocols. Your application is a /resource server/. Users will interact with this resource server to get the desired functionality. I leave this upto you what that desired functionality could be.
+
+OAuth is designed to 
 OAuth defines four roles:
 
 1. Resource owner
