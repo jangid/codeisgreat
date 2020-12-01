@@ -12,6 +12,10 @@ This is my /*own*/ space. Follow ... oops! ... bookmark this page and check once
   Now that it is a builtin feature, no need for any extra package for email address management and autocompletion. My online contacts book is connected to macOS contacts via =CardDav= and now =Emacs= is also connected to that.
 
 * Recently read or currently reading ([[file:readings.html][full list]])
+- [[https://en.wikipedia.org/wiki/Main_Page][Wikipedia]]
+
+  "Wikipedia is a proof that you can trust people, most of the time", a friend of mine told me this once. This is a profound statement.
+
 - [[https://ai.googleblog.com/2020/10/background-features-in-google-meet.html][Background Features in Google Meet, Powered by Web ML]]
   
   Good thing is that it is based on an open-sourced project [[https://github.com/google/mediapipe][MediaPipe]] by Google. This uses WebAssembly to speedup in-browser execution. And it looks like that Google is really into it. Google is into everything BTW. They have released Chrome 84 that supports WebAssembly [[https://en.wikipedia.org/wiki/SIMD][SIMD]] as well, claiming 2x performance boost.
@@ -32,9 +36,6 @@ This is my /*own*/ space. Follow ... oops! ... bookmark this page and check once
 
   But how can I just sit and watch it work. As always. Lost in the web. First [[https://www.keycloak.org/documentation][Keycloak docs]] → [[https://openid.net/connect/][OpenID]] → [[https://tools.ietf.org/html/rfc6749][OAuth]].
 
-- [[https://taylor.gl/blog/9/][How to walk upright and stop living in a cave]]
-
-  This is a neatly written article on indoor lighting, ventilation, humidity, temperature and other parameters that affect our lives. This is from Tylor G. Lung's blog. Go read. Some really practical and useful advices there.
 * To Read
 - [[https://fasterthanli.me/series/making-our-own-executable-packer/part-1][What's in a Linux executable?]]
 - [[https://openid.net/connect/][OpenID Connect]]
