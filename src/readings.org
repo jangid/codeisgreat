@@ -1,17 +1,11 @@
-#+TITLE: Hello. I'm Pankaj Jangid
+#+TITLE: Pankaj Jangid's Reading Archive
 #+SUBTITLE: I read code. I write code.
 #+OPTIONS: toc:nil, num:nil, html-postamble:t, 
 
-This is my /*own*/ space. Follow ... oops! ... bookmark this page and check once in a while to see what is happening in my life. Sorry if I sould like a self-obsessed person. But I don't have any other way to protect /your/ privacy. This is the only page where I can share my whereabouts without you being tracked. Also this page is /usually/ more current than my [[https://twitter.com/codeisgreat][twitter]] timeline. If you have any comments or got a suggestion for me or you just want to say hello to me then write an email at my.firstname@domain.of.this.web.site.
+This is my reading archive. If am an avid reader and would read the whole internet one day. If you are a good writer then do send me stuff. I will genuinely read your essay and add it to my list, here, with some notes.
 
-* New writeup [[file:writings.html][(full list]])
-- [[file:short/emacs-macos-contacts.html][MacOS Contacts in Emacs]]
+* The Archive Begins...
 
-  I was browsing the =etc/NEWS= file from the latest emacs source code and found this useful feature. Currently my work requires me to work on macOS so this is kind of essential for me to fetch contacts into =Gnus=. Because that is what I use for all my emails and news.
-
-  Now that it is a builtin feature, no need for any extra package for email address management and autocompletion. My online contacts book is connected to macOS contacts via =CardDav= and now =Emacs= is also connected to that.
-
-* Recently read or currently reading ([[file:readings.html][full list]])
 - [[https://ai.googleblog.com/2020/10/background-features-in-google-meet.html][Background Features in Google Meet, Powered by Web ML]]
   
   Good thing is that it is based on an open-sourced project [[https://github.com/google/mediapipe][MediaPipe]] by Google. This uses WebAssembly to speedup in-browser execution. And it looks like that Google is really into it. Google is into everything BTW. They have released Chrome 84 that supports WebAssembly [[https://en.wikipedia.org/wiki/SIMD][SIMD]] as well, claiming 2x performance boost.
@@ -35,11 +29,3 @@ This is my /*own*/ space. Follow ... oops! ... bookmark this page and check once
 - [[https://taylor.gl/blog/9/][How to walk upright and stop living in a cave]]
 
   This is a neatly written article on indoor lighting, ventilation, humidity, temperature and other parameters that affect our lives. This is from Tylor G. Lung's blog. Go read. Some really practical and useful advices there.
-* To Read
-- [[https://fasterthanli.me/series/making-our-own-executable-packer/part-1][What's in a Linux executable?]]
-- [[https://openid.net/connect/][OpenID Connect]]
-
-
-
-
-
