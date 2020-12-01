@@ -2,7 +2,7 @@
 #+SUBTITLE: I read code. I write code.
 #+OPTIONS: toc:nil, num:nil, html-postamble:t, 
 
-This is my reading archive. If am an avid reader and would read the whole internet one day. If you are a good writer then do send me stuff. I will genuinely read your essay and add it to my list, here, with some notes.
+Sometimes I write.
 
 * Writings...
 
