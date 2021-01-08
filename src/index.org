@@ -2,7 +2,7 @@
 #+SUBTITLE: I read code. I write code.
 #+OPTIONS: toc:nil, num:nil, html-postamble:t, 
 
-This is my /*own*/ space. Follow ... oops! ... bookmark this page and check once in a while to see what is happening in my life. Sorry if I sould like a self-obsessed person. But I don't have any other way to protect /your/ privacy. This is the only page where I can share my whereabouts without you being tracked. Also this page is /usually/ more current than my [[https://twitter.com/codeisgreat][twitter]] timeline. If you have any comments or got a suggestion for me or you just want to say hello to me then write an email at my.firstname@domain.of.this.web.site.
+This is my /*own*/ space. Follow ... oops! ... bookmark this page and check once in a while to see what is happening in my life. Sorry if I sound like a self-obsessed person. But I don't have any other way to protect /your/ privacy. This is the only page where I can share my whereabouts without you being tracked. Also this page is /usually/ more current than my [[https://twitter.com/codeisgreat][twitter]] timeline. If you have any comments or got a suggestion for me or you just want to say hello to me then write an email at my.firstname@domain.of.this.web.site.
 
 * New writeup [[file:writings.html][(full list]])
 - [[file:short/emacs-macos-contacts.html][MacOS Contacts in Emacs]]

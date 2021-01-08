@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-12-01 Tue 14:46 -->
+<!-- 2021-01-08 Fri 22:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hello. I'm Pankaj Jangid</title>
@@ -40,7 +40,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -52,7 +52,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -194,50 +194,26 @@
   /*]]>*/-->
 </style>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -247,7 +223,7 @@ for the JavaScript code in this tag.
 <span class="subtitle">I read code. I write code.</span>
 </h1>
 <p>
-This is my <i><b>own</b></i> space. Follow &#x2026; oops! &#x2026; bookmark this page and check once in a while to see what is happening in my life. Sorry if I sould like a self-obsessed person. But I don't have any other way to protect <i>your</i> privacy. This is the only page where I can share my whereabouts without you being tracked. Also this page is <i>usually</i> more current than my <a href="https://twitter.com/codeisgreat">twitter</a> timeline. If you have any comments or got a suggestion for me or you just want to say hello to me then write an email at my.firstname@domain.of.this.web.site.
+This is my <i><b>own</b></i> space. Follow &#x2026; oops! &#x2026; bookmark this page and check once in a while to see what is happening in my life. Sorry if I sound like a self-obsessed person. But I don't have any other way to protect <i>your</i> privacy. This is the only page where I can share my whereabouts without you being tracked. Also this page is <i>usually</i> more current than my <a href="https://twitter.com/codeisgreat">twitter</a> timeline. If you have any comments or got a suggestion for me or you just want to say hello to me then write an email at my.firstname@domain.of.this.web.site.
 </p>
 
 <div id="outline-container-orgcc45cba" class="outline-2">
@@ -335,7 +311,7 @@ But how can I just sit and watch it work. As always. Lost in the web. First <a h
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Last updated: 2020-12-01 Tue 14:46</p><p class="creator">Created using: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.0.50 (<a href="https://orgmode.org">Org</a> mode 9.3)</p><p class="validation"><a href="http://validator.w3.org/check?uri=https%3A%2F%2Fcodeisgreat.org%2F"><img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodeisgreat.org%2F&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;vextwarning="><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></p>
+<p class="date">Last updated: 2021-01-08 Fri 22:20</p><p class="creator">Created using: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.0.50 (<a href="https://orgmode.org">Org</a> mode 9.4.4)</p><p class="validation"><a href="http://validator.w3.org/check?uri=https%3A%2F%2Fcodeisgreat.org%2F"><img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodeisgreat.org%2F&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;vextwarning="><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></p>
 </div>
 </body>
 </html>
