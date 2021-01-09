@@ -2,39 +2,75 @@
 #+SUBTITLE: I read code. I write code.
 #+OPTIONS: toc:nil, num:nil, html-postamble:t, 
 
-This is my /*own*/ space. Follow ... oops! ... bookmark this page and check once in a while to see what is happening in my life. Sorry if I sound like a self-obsessed person. But I don't have any other way to protect /your/ privacy. This is the only page where I can share my whereabouts without you being tracked. Also this page is /usually/ more current than my [[https://twitter.com/codeisgreat][twitter]] timeline. If you have any comments or got a suggestion for me or you just want to say hello to me then write an email at my.firstname@domain.of.this.web.site.
+This is my /*own*/ space. Follow ... oops! ... bookmark this page and
+check once in a while to see what is happening in my life. Sorry if I
+sound like a self-obsessed person. But I don't have any other way to
+protect /your/ privacy. This is the only page where I can share my
+whereabouts without you being tracked. Also this page is /usually/
+more current than my [[https://twitter.com/codeisgreat][twitter]] timeline. If you have any comments or got
+a suggestion for me or you just want to say hello to me then write an
+email at my.firstname@domain.of.this.web.site.
 
 * New writeup [[file:writings.html][(full list]])
 - [[file:short/emacs-macos-contacts.html][MacOS Contacts in Emacs]]
 
-  I was browsing the =etc/NEWS= file from the latest emacs source code and found this useful feature. Currently my work requires me to work on macOS so this is kind of essential for me to fetch contacts into =Gnus=. Because that is what I use for all my emails and news.
+  I was browsing the =etc/NEWS= file from the latest emacs source code
+  and found this useful feature. Currently my work requires me to work
+  on macOS so this is kind of essential for me to fetch contacts into
+  =Gnus=. Because that is what I use for all my emails and news.
 
-  Now that it is a builtin feature, no need for any extra package for email address management and autocompletion. My online contacts book is connected to macOS contacts via =CardDav= and now =Emacs= is also connected to that.
+  Now that it is a builtin feature, no need for any extra package for
+  email address management and autocompletion. My online contacts book
+  is connected to macOS contacts via =CardDav= and now =Emacs= is also
+  connected to that.
 
 * Recently read or currently reading ([[file:readings.html][full list]])
 - [[https://en.wikipedia.org/wiki/Main_Page][Wikipedia]]
 
-  "Wikipedia is a proof that you can trust people, most of the time", a friend of mine told me this once. This is a profound statement.
+  "Wikipedia is a proof that you can trust people, most of the time",
+  a friend of mine told me this once. This is a profound statement.
 
 - [[https://ai.googleblog.com/2020/10/background-features-in-google-meet.html][Background Features in Google Meet, Powered by Web ML]]
   
-  Good thing is that it is based on an open-sourced project [[https://github.com/google/mediapipe][MediaPipe]] by Google. This uses WebAssembly to speedup in-browser execution. And it looks like that Google is really into it. Google is into everything BTW. They have released Chrome 84 that supports WebAssembly [[https://en.wikipedia.org/wiki/SIMD][SIMD]] as well, claiming 2x performance boost.
+  Good thing is that it is based on an open-sourced project [[https://github.com/google/mediapipe][MediaPipe]]
+  by Google. This uses WebAssembly to speedup in-browser
+  execution. And it looks like that Google is really into it. Google
+  is into everything BTW. They have released Chrome 84 that supports
+  WebAssembly [[https://en.wikipedia.org/wiki/SIMD][SIMD]] as well, claiming 2x performance boost.
 
-  MobileNetV3 diagram is cool. The encoder and decoder are symmetric in this network. The post shares some example gifs to give you an idea. Honestly shares where it lacks. Look at the last gif. It clearly shows edge problems. But this is will definitely improve overtime. Great work.
+  MobileNetV3 diagram is cool. The encoder and decoder are symmetric
+  in this network. The post shares some example gifs to give you an
+  idea. Honestly shares where it lacks. Look at the last gif. It
+  clearly shows edge problems. But this is will definitely improve
+  overtime. Great work.
 
 - [[https://turnerj.com/blog/a-better-mousetrap][A Better Mousetrap]]
 
-  This is a nice write-up on product launch journey. So many people think that it is a small thing to just try out and fail. No. Even if you are building a small /thing/, it is going to take some time. It is difficult to keep the hope alive. And the ones who do it, they really make it /big/.
+  This is a nice write-up on product launch journey. So many people
+  think that it is a small thing to just try out and fail. No. Even if
+  you are building a small /thing/, it is going to take some time. It
+  is difficult to keep the hope alive. And the ones who do it, they
+  really make it /big/.
     
 - [[https://lwn.net/SubscriberLink/835599/f3b49b022582e03e/][Packaging Kubernetes for Debian]]
 
-  This arcticle clarifies why you are not seeing and perhaps won't see Kubernetes in any stable version of Debian in the near future. Debian Technical Committee (TC) will have to either change rules if they want it to bring into Debian Stable /or/ they may just keep Kubernetes in the Debian Testing repository, where they don't have any hard commitment towards security.
+  This arcticle clarifies why you are not seeing and perhaps won't see
+  Kubernetes in any stable version of Debian in the near
+  future. Debian Technical Committee (TC) will have to either change
+  rules if they want it to bring into Debian Stable /or/ they may just
+  keep Kubernetes in the Debian Testing repository, where they don't
+  have any hard commitment towards security.
      
 - [[https://tools.ietf.org/html/rfc6749][The OAuth 2.0 Authorization Framework]]:
     
-  Working on a tiny hello-world kind-of appication for learning something. But I don't want to re-implement authentication part. This has been done a million times by so many programmers. So I pulled a [[https://hub.docker.com/r/jboss/keycloak][Keycloak]] image from the Docker Hub. And spawned it. Great work indeed.
+  Working on a tiny hello-world kind-of appication for learning
+  something. But I don't want to re-implement authentication
+  part. This has been done a million times by so many programmers. So
+  I pulled a [[https://hub.docker.com/r/jboss/keycloak][Keycloak]] image from the Docker Hub. And spawned it. Great
+  work indeed.
 
-  But how can I just sit and watch it work. As always. Lost in the web. First [[https://www.keycloak.org/documentation][Keycloak docs]] → [[https://openid.net/connect/][OpenID]] → [[https://tools.ietf.org/html/rfc6749][OAuth]].
+  But how can I just sit and watch it work. As always. Lost in the
+  web. First [[https://www.keycloak.org/documentation][Keycloak docs]] → [[https://openid.net/connect/][OpenID]] → [[https://tools.ietf.org/html/rfc6749][OAuth]].
 
 * To Read
 - [[https://fasterthanli.me/series/making-our-own-executable-packer/part-1][What's in a Linux executable?]]
