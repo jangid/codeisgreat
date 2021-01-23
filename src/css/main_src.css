@@ -46,8 +46,13 @@
     th {
 	@apply bg-gray-100;
     }
+
+    pre {
+	@apply mt-2 mb-2;
+    }
     
     #content {
 	@apply container mx-auto;
+	@apply pl-4 pr-4;
     }
 }
