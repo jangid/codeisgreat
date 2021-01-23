@@ -6,7 +6,7 @@
 <!-- 2021-01-23 Sat 11:49 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Pankaj Jangid's Writings</title>
+<title>MacOS Contacts in Emacs</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Pankaj Jangid" />
 <style type="text/css">
@@ -218,32 +218,34 @@
 </head>
 <body>
 <div id="content">
-<h1 class="title">Pankaj Jangid's Writings
+<h1 class="title">MacOS Contacts in Emacs
 <br />
-<span class="subtitle">I read code. I write code.</span>
+<span class="subtitle">(Note that this works only on emacs-28, which is not yet released)</span>
 </h1>
 <p>
-Sometimes I write.
+Following code in your startup file will enable macOS contacts access via built-in EUDC feature of Emacs. No need for any extra package for this. The below snippet will add a keyboard short-cut as well <code>‘C-c TAB’</code>.
 </p>
 
-<div id="outline-container-orgd6e4a11" class="outline-2">
-<h2 id="orgd6e4a11">Writings&#x2026;</h2>
-<div class="outline-text-2" id="text-orgd6e4a11">
-<ul class="org-ul">
-<li><p>
-<a href="short/emacs-macos-contacts.html">MacOS Contacts in Emacs</a>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(when (eq system-type 'darwin)
+  (eval-and-compile (require 'eudcb-macos-contacts))
+  (eudc-macos-contacts-set-server "localhost"))
+(eval-when-compile (require 'message))
+(define-key message-mode-map
+  [(control ?c) (tab)] 'eudc-expand-inline)
+(eval-when-compile (require 'sendmail))
+(define-key mail-mode-map
+  [(control ?c) (tab)] 'eudc-expand-inline)
+</pre>
+</div>
+
+<p>
+So if you are in a message buffer address field, just type few characters to search and then press the above defined key sequence <code>‘C-c TAB’</code>. If multiple matching contacts are found then the completion system will come into play. Icomplete also works with it.
 </p>
 
 <p>
-I was browsing the <code>etc/NEWS</code> file from the latest emacs source code and found this useful feature. Currently my work requires me to work on macOS so this is kind of essential for me to fetch contacts into <code>Gnus</code>. Because that is what I use for all my emails and news.
+Another 0.1 sec saved in loading time. <code>‘esup’</code> now shows 1.497sec. Because this is all builtin.
 </p>
-
-<p>
-Now that it is a builtin feature, no need for any extra package for email address management and autocompletion. My online contacts book is connected to macOS contacts via <code>CardDav</code> and now <code>Emacs</code> is also connected to that.
-</p></li>
-</ul>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Pankaj Jangid (<a href="mailto:pankaj@codeisgreat.org">pankaj@codeisgreat.org</a>)</p>
