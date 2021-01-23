@@ -3,13 +3,51 @@
 @tailwind utilities;
 
 @layer base {
-    #content {
-	@apply md:container md:mx-auto;
-    }
     h1 {
 	@apply text-2xl;
+	@apply mt-4 mb-2;
     }
+    
     h2 {
 	@apply text-xl;
+	@apply mt-4 mb-2;
+    }
+
+    h3 {
+	@apply text-lg;
+	@apply mt-2 mb-2;
+    }
+    
+    a {
+	@apply underline text-blue-500;
+    }
+    
+    ul {
+	@apply list-disc;
+	@apply list-inside;
+	@apply mt-2 mb-2;
+    }
+
+    ol {
+	@apply list-decimal;
+	@apply list-inside;
+	@apply mt-2 mb-2;
+    }
+
+    table {
+	@apply table-auto;
+	@apply mt-2 mb-2;
+    }
+
+    th, td {
+	@apply border;
+    }
+
+    th {
+	@apply bg-gray-100;
+    }
+    
+    #content {
+	@apply container mx-auto;
     }
 }

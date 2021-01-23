@@ -14,11 +14,45 @@ performance tests. This exercise should be useful to me as well as
 others. Because the activity needs to be conducted from time to time
 to remain active on the Atlassian Marketplace.
 
+* Prerequisites
+  These are not hard specifics. But if you know about these things
+  then certainly it will speed up your learning.
+
+  1. Setting up PostgreSQL database
+  2. Atlassian Jira installation
+  3. Jira administration
+  4. Jira Universal Plugin Manager (UPM)
+  5. Apache JMeter
+  6. Amazon Web Services Cloud
+
+  Some of the things will be automatically taken care of because of
+  the automated scripts provided by Atlassian and Amazon. But you will
+  appreciated the power of automation only if you know what is and how
+  much happening under the hood.
+  
+* Resources required
+  Before we begin, let us plan on what we actually need, to run the
+  tests. We will be executing the tests on AWS. As per
+  Atlassian[fn:1], we are required to submit the report, after
+  executing tests on 1 node, 2 node and 4 node configuration. For each
+  additional node we need one EC2 instance to run the application;
+  Jira Software in our case.
+
+  | Configuration | 1-node | 2-node | 4-node |
+  |---------------+--------+--------+--------|
+  | EC2 Instances |      1 |      2 |      4 |
+  | DB Instances  |      1 |      1 |      1 |
+  |               |        |        |        |
+  
+* Setting up resources on Amazon cloud
+  
 * Footnotes
 
-[fn:3] LXP - Links Explorer Traceability & Hierarchy - https://optimizory.com/products/lxp.
+[fn:3] LXP - Links Explorer Traceability & Hierarchy -
+https://optimizory.com/products/lxp.
 
-[fn:2] RMsis - Requirement Management for Jira - https://optimizory.com/products/rmsis.
+[fn:2] RMsis - Requirement Management for Jira -
+https://optimizory.com/products/rmsis.
 
 [fn:1] Performance and scale testing your Data Center app -
 https://developer.atlassian.com/platform/marketplace/dc-apps-performance-and-scale-testing/#requirements.

@@ -1,13 +1,21 @@
 #+TITLE: Pankaj Jangid's Writings
 #+SUBTITLE: I read code. I write code.
-#+OPTIONS: toc:nil, num:nil, html-postamble:t, 
+#+OPTIONS: toc:nil, num:nil, html-postamble:nil, 
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css" />
 
 Sometimes I write.
 
 * Writings...
 
-- [[file:short/emacs-macos-contacts.html][MacOS Contacts in Emacs]]
+** [[file:short/emacs-macos-contacts.html][MacOS Contacts in Emacs]]
 
-  I was browsing the =etc/NEWS= file from the latest emacs source code and found this useful feature. Currently my work requires me to work on macOS so this is kind of essential for me to fetch contacts into =Gnus=. Because that is what I use for all my emails and news.
+   I was browsing the =etc/NEWS= file from the latest emacs source
+   code and found this useful feature. Currently my work requires me
+   to work on macOS so this is kind of essential for me to fetch
+   contacts into =Gnus=. Because that is what I use for all my emails
+   and news.
 
-  Now that it is a builtin feature, no need for any extra package for email address management and autocompletion. My online contacts book is connected to macOS contacts via =CardDav= and now =Emacs= is also connected to that.
+   Now that it is a builtin feature, no need for any extra package for
+   email address management and autocompletion. My online contacts
+   book is connected to macOS contacts via =CardDav= and now =Emacs=
+   is also connected to that.

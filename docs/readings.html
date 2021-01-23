@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-23 Sat 11:49 -->
+<!-- 2021-01-23 Sat 19:49 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Pankaj Jangid&rsquo;s Reading Archive</title>
+<title>Pankaj Jangid's Reading Archive</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Pankaj Jangid" />
 <style type="text/css">
@@ -193,6 +193,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -218,82 +219,104 @@
 </head>
 <body>
 <div id="content">
-<h1 class="title">Pankaj Jangid&rsquo;s Reading Archive
+<h1 class="title">Pankaj Jangid's Reading Archive
 <br />
 <span class="subtitle">I read code. I write code.</span>
 </h1>
 <p>
-This is my reading archive. If am an avid reader and would read the whole internet one day. If you are a good writer then do send me stuff. I will genuinely read your essay and add it to my list, here, with some notes.
+This is my reading archive. If am an avid reader and would read the
+whole internet one day. If you are a good writer then do send me
+stuff. I will genuinely read your essay and add it to my list, here,
+with some notes.
 </p>
 
 <div id="outline-container-org90c3756" class="outline-2">
 <h2 id="org90c3756">The Archive Begins&#x2026;</h2>
 <div class="outline-text-2" id="text-org90c3756">
-<ul class="org-ul">
-<li><p>
-<a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+</div>
+<div id="outline-container-org3899775" class="outline-3">
+<h3 id="org3899775"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></h3>
+<div class="outline-text-3" id="text-org3899775">
+<p>
+"Wikipedia is a proof that you can trust people, most of the time",
+a friend of mine told me this once. This is a profound statement.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcab097c" class="outline-3">
+<h3 id="orgcab097c"><a href="https://ai.googleblog.com/2020/10/background-features-in-google-meet.html">Background Features in Google Meet, Powered by Web ML</a></h3>
+<div class="outline-text-3" id="text-orgcab097c">
+<p>
+Good thing is that it is based on an open-sourced project <a href="https://github.com/google/mediapipe">MediaPipe</a>
+by Google. This uses WebAssembly to speedup in-browser
+execution. And it looks like that Google is really into it. Google
+is into everything BTW. They have released Chrome 84 that supports
+WebAssembly <a href="https://en.wikipedia.org/wiki/SIMD">SIMD</a> as well, claiming 2x performance boost.
 </p>
 
 <p>
-&ldquo;Wikipedia is a proof that you can trust people, most of the time&rdquo;, a friend of mine told me this once. This is a profound statement.
-</p></li>
-
-<li><p>
-<a href="https://ai.googleblog.com/2020/10/background-features-in-google-meet.html">Background Features in Google Meet, Powered by Web ML</a>
+MobileNetV3 diagram is cool. The encoder and decoder are symmetric
+in this network. The post shares some example gifs to give you an
+idea. Honestly shares where it lacks. Look at the last gif. It
+clearly shows edge problems. But this is will definitely improve
+overtime. Great work.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbd5180f" class="outline-3">
+<h3 id="orgbd5180f"><a href="https://turnerj.com/blog/a-better-mousetrap">A Better Mousetrap</a></h3>
+<div class="outline-text-3" id="text-orgbd5180f">
+<p>
+This is a nice write-up on product launch journey. So many people
+think that it is a small thing to just try out and fail. No. Even
+if you are building a small <i>thing</i>, it is going to take some
+time. It is difficult to keep the hope alive. And the ones who do
+it, they really make it <i>big</i>.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb60e980" class="outline-3">
+<h3 id="orgb60e980"><a href="https://lwn.net/SubscriberLink/835599/f3b49b022582e03e/">Packaging Kubernetes for Debian</a></h3>
+<div class="outline-text-3" id="text-orgb60e980">
+<p>
+This arcticle clarifies why you are not seeing and perhaps won't
+see Kubernetes in any stable version of Debian in the near
+future. Debian Technical Committee (TC) will have to either change
+rules if they want it to bring into Debian Stable <i>or</i> they may
+just keep Kubernetes in the Debian Testing repository, where they
+don't have any hard commitment towards security.
+</p>
+</div>
+</div>
+<div id="outline-container-org89feee6" class="outline-3">
+<h3 id="org89feee6"><a href="https://tools.ietf.org/html/rfc6749">The OAuth 2.0 Authorization Framework</a>:</h3>
+<div class="outline-text-3" id="text-org89feee6">
+<p>
+Working on a tiny hello-world kind-of appication for learning
+something. But I don't want to re-implement authentication
+part. This has been done a million times by so many programmers. So
+I pulled a <a href="https://hub.docker.com/r/jboss/keycloak">Keycloak</a> image from the Docker Hub. And spawned
+it. Great work indeed.
 </p>
 
 <p>
-Good thing is that it is based on an open-sourced project <a href="https://github.com/google/mediapipe">MediaPipe</a> by Google. This uses WebAssembly to speedup in-browser execution. And it looks like that Google is really into it. Google is into everything BTW. They have released Chrome 84 that supports WebAssembly <a href="https://en.wikipedia.org/wiki/SIMD">SIMD</a> as well, claiming 2x performance boost.
+But how can I just sit and watch it work. As always. Lost in the
+web. First <a href="https://www.keycloak.org/documentation">Keycloak docs</a> → <a href="https://openid.net/connect/">OpenID</a> → <a href="https://tools.ietf.org/html/rfc6749">OAuth</a>.
 </p>
-
+</div>
+</div>
+<div id="outline-container-org309e96a" class="outline-3">
+<h3 id="org309e96a"><a href="https://taylor.gl/blog/9/">How to walk upright and stop living in a cave</a></h3>
+<div class="outline-text-3" id="text-org309e96a">
 <p>
-MobileNetV3 diagram is cool. The encoder and decoder are symmetric in this network. The post shares some example gifs to give you an idea. Honestly shares where it lacks. Look at the last gif. It clearly shows edge problems. But this is will definitely improve overtime. Great work.
-</p></li>
-
-<li><p>
-<a href="https://turnerj.com/blog/a-better-mousetrap">A Better Mousetrap</a>
+This is a neatly written article on indoor lighting, ventilation,
+humidity, temperature and other parameters that affect our
+lives. This is from Tylor G. Lung's blog. Go read. Some really
+practical and useful advices there.
 </p>
-
-<p>
-This is a nice write-up on product launch journey. So many people think that it is a small thing to just try out and fail. No. Even if you are building a small <i>thing</i>, it is going to take some time. It is difficult to keep the hope alive. And the ones who do it, they really make it <i>big</i>.
-</p></li>
-
-<li><p>
-<a href="https://lwn.net/SubscriberLink/835599/f3b49b022582e03e/">Packaging Kubernetes for Debian</a>
-</p>
-
-<p>
-This arcticle clarifies why you are not seeing and perhaps won&rsquo;t see Kubernetes in any stable version of Debian in the near future. Debian Technical Committee (TC) will have to either change rules if they want it to bring into Debian Stable <i>or</i> they may just keep Kubernetes in the Debian Testing repository, where they don&rsquo;t have any hard commitment towards security.
-</p></li>
-
-<li><p>
-<a href="https://tools.ietf.org/html/rfc6749">The OAuth 2.0 Authorization Framework</a>:
-</p>
-
-<p>
-Working on a tiny hello-world kind-of appication for learning something. But I don&rsquo;t want to re-implement authentication part. This has been done a million times by so many programmers. So I pulled a <a href="https://hub.docker.com/r/jboss/keycloak">Keycloak</a> image from the Docker Hub. And spawned it. Great work indeed.
-</p>
-
-<p>
-But how can I just sit and watch it work. As always. Lost in the web. First <a href="https://www.keycloak.org/documentation">Keycloak docs</a> → <a href="https://openid.net/connect/">OpenID</a> → <a href="https://tools.ietf.org/html/rfc6749">OAuth</a>.
-</p></li>
-
-<li><p>
-<a href="https://taylor.gl/blog/9/">How to walk upright and stop living in a cave</a>
-</p>
-
-<p>
-This is a neatly written article on indoor lighting, ventilation, humidity, temperature and other parameters that affect our lives. This is from Tylor G. Lung&rsquo;s blog. Go read. Some really practical and useful advices there.
-</p></li>
-</ul>
 </div>
 </div>
 </div>
-<div id="postamble" class="status">
-<p class="author">Author: Pankaj Jangid (<a href="mailto:pankaj@codeisgreat.org">pankaj@codeisgreat.org</a>)</p>
-<p class="date">Date: </p>
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.0.50 (<a href="https://orgmode.org">Org</a> mode 9.4.4)</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
