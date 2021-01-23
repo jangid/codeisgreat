@@ -1,3 +1,5 @@
 Gemfile.lock
 _site
-src/**/*.html
+src/*.html
+src/notes/*.html
+src/css/main.css

@@ -1,28 +1,24 @@
 #+TITLE: Testing performance of your App on Jira DC deployed on AWS
-#+OPTIONS: toc:nil, num:nil, html-postamble:t, 
+#+OPTIONS: toc:nil, num:nil, html-postamble:nil, 
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/main.css" />
 
+If you have an app listed on Atlassian Marketplace then you might have
+come across this regulatory requirement from Atlassian that the
+application must perform as per the criteria set by
+Atlassian[fn:1]. We have two apps on the marketplace - (1) RMsis -
+Requirement Management for Jira[fn:2] (2) LXP - Links Explorer
+Traceability & Hierarchy[fn:3]. Both of them are available for Jira
+Server and Jira Data Center editions. LXP is available on cloud as
+well. In this article, I'll enumerate the steps to carry out the
+performance tests. This exercise should be useful to me as well as
+others. Because the activity needs to be conducted from time to time
+to remain active on the Atlassian Marketplace.
 
-Following code in your startup file will enable macOS contacts access
-via built-in EUDC feature of Emacs. No need for any extra package for
-this. The below snippet will add a keyboard short-cut as well ~‘C-c
-TAB’~.
+* Footnotes
 
-#+begin_src emacs-lisp
-(when (eq system-type 'darwin)
-  (eval-and-compile (require 'eudcb-macos-contacts))
-  (eudc-macos-contacts-set-server "localhost"))
-(eval-when-compile (require 'message))
-(define-key message-mode-map
-  [(control ?c) (tab)] 'eudc-expand-inline)
-(eval-when-compile (require 'sendmail))
-(define-key mail-mode-map
-  [(control ?c) (tab)] 'eudc-expand-inline)
-#+end_src
+[fn:3] LXP - Links Explorer Traceability & Hierarchy - https://optimizory.com/products/lxp.
 
-So if you are in a message buffer address field, just type few
-characters to search and then press the above defined key sequence
-~‘C-c TAB’~. If multiple matching contacts are found then the
-completion system will come into play. Icomplete also works with it.
+[fn:2] RMsis - Requirement Management for Jira - https://optimizory.com/products/rmsis.
 
-Another 0.1 sec saved in loading time. ~‘esup’~ now shows
-1.497sec. Because this is all builtin.
+[fn:1] Performance and scale testing your Data Center app -
+https://developer.atlassian.com/platform/marketplace/dc-apps-performance-and-scale-testing/#requirements.
