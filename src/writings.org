@@ -7,7 +7,7 @@ Sometimes I write.
 
 * Writings...
 
-** [[file:short/emacs-macos-contacts.html][MacOS Contacts in Emacs]]
+** [[file:notes/emacs-macos-contacts.html][MacOS Contacts in Emacs]]
 
    I was browsing the =etc/NEWS= file from the latest emacs source
    code and found this useful feature. Currently my work requires me
