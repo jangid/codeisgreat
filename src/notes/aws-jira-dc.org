@@ -1,18 +1,62 @@
-#+TITLE: Testing performance of your App on Jira DC deployed on AWS
+#+TITLE: Performance and scale testing of your App on Jira DC
 #+OPTIONS: toc:nil, num:nil, html-postamble:nil, 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/main.css" />
 
-If you have an app listed on Atlassian Marketplace then you might have
-come across this regulatory requirement from Atlassian that the
-application must perform as per the criteria set by
-Atlassian[fn:1]. We have two apps on the marketplace - (1) RMsis -
-Requirement Management for Jira[fn:2] (2) LXP - Links Explorer
-Traceability & Hierarchy[fn:3]. Both of them are available for Jira
-Server and Jira Data Center editions. LXP is available on cloud as
-well. In this article, I'll enumerate the steps to carry out the
-performance tests. This exercise should be useful to me as well as
-others. Because the activity needs to be conducted from time to time
-to remain active on the Atlassian Marketplace.
+If you have apps listed on Atlassian Marketplace then you might have
+come across this regulatory requirement from Atlassian that your
+applications must perform as per a set criteria[fn:1]. This is good
+for customers because if an app is in the marketplace then they can be
+sure that it meets the performance and scalability benchmarks. They
+can safely rely on Atlassian's judgement. And it is good for the app
+providers also because it boosts their confidence in their own
+app. Clearing the benchmark is not a small feat. Test data is huge. 1
+million issues, 2 million attachments, 6 million comments. Check out
+the full set on the developer website[fn:4].
+
+We have two apps on the marketplace - (1) RMsis - Requirement
+Management for Jira[fn:2] (2) LXP - Links Explorer Traceability &
+Hierarchy[fn:3]. Both of them are available for Jira Data Center and
+earstwhile Jira Server edition. LXP is available on the cloud as
+well. I have gone through the performance and scale test for one
+app. Hence I am writing down my experience here. It will definitely be
+useful when I go for another round for another app.
+
+This article is not to scare you about the bechmarking test but to
+encourage you to go for it. Atlassian has done a great job of
+documenting the steps[fn:4]. This post will serve as an add-on to get
+you started. I'll describe the concepts involved.
+
+A well known fact is that the Jira Data Centre or Jira DC is designed
+to serve a lot more concurrent users under enterprise load than you
+would normally do with server edition. Basically, you can add high
+performing nodes as your usage goes beyond a limit. You can start with
+single node and ramp-up the hardware as the situation
+demands. Atlassian has to make sure that the apps also perform and
+scale well along with Jira. Hence the tests.
+
+To list your apps on the Atlassian Marketplace[fn:5], you are required
+to test the apps on 1-node, 2-node and 4-node Jira DC environment. And
+submit the test results to Atlassian. The math goes like this - 4
+machines (max) to install Jira DC, one machine to host database, and
+one for executing the test-cases. This last one could be your laptop
+if your whole setup is local i.e. within the premise. In total, you
+will require 6 machines.
+
+There are three parts to complete this exercise:
+
+1. Setup the hardware
+2. Setup Jira DC and your app
+3. Develop and execute the tests
+
+* Setup the hardware
+  If you are working in a large enterprise with own cluster then probably you will have to go through
+
+
+  
+, I'll enumerate the steps to carry out the performance
+tests. This exercise should be useful to me as well as others. Because
+the activity needs to be conducted from time to time to remain active
+on the Atlassian Marketplace.
 
 * Prerequisites
   These are not hard specifics. But if you know about these things
@@ -47,6 +91,12 @@ to remain active on the Atlassian Marketplace.
 * Setting up resources on Amazon cloud
   
 * Footnotes
+
+[fn:5] Atlassian Marketplace
+https://marketplace.atlassian.com/
+
+[fn:4] Testing your app on a large DC
+https://developer.atlassian.com/platform/marketplace/testing-your-app-with-a-large-data-set/
 
 [fn:3] LXP - Links Explorer Traceability & Hierarchy -
 https://optimizory.com/products/lxp.

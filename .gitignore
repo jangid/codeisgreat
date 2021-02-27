@@ -2,5 +2,4 @@ Gemfile.lock
 _site
 src/*.html
 src/notes/*.html
-src/css/main.css
 cron.sh
