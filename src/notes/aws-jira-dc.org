@@ -42,14 +42,19 @@ one for executing the test-cases. This last one could be your laptop
 if your whole setup is local i.e. within the premise. In total, you
 will require 6 machines.
 
-There are three parts to complete this exercise:
+Next three sections are dedicated to the high-level steps to complete
+this exercise. For detailed instructions inside each step, I recommend
+the documentation published by Atlassian. I’ll give references
+wherever necessary. Next sections will cover:
 
-1. Setup the hardware
+1. Setting up the hardware
 2. Setup Jira DC and your app
 3. Develop and execute the tests
 
 * Setup the hardware
-  If you are working in a large enterprise with own cluster then probably you will have to go through
+  If you are working in a large enterprise with own cluster then probably you will have to go through some administrative tickets to provision the hardware. Other option is to quickly launch virtual machines on Amazon AWS cloud and delete when you are done. In this article, I’ll talk about the later.
+
+  Atlassian and AWS have jointly worked on the open-source quickstart scripts that we can readily use for our purpose[fn:6][fn:7].
 
 
   
@@ -91,6 +96,12 @@ on the Atlassian Marketplace.
 * Setting up resources on Amazon cloud
   
 * Footnotes
+
+[fn:7] Jira DC on AWS - Quick Start Reference Deployment [Github Repo]
+https://github.com/aws-quickstart/quickstart-atlassian-jira
+
+[fn:6] Jira DC on AWS - Quick Start Reference Deployment
+https://aws-quickstart.github.io/quickstart-atlassian-jira/
 
 [fn:5] Atlassian Marketplace
 https://marketplace.atlassian.com/
