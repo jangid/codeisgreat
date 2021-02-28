@@ -52,61 +52,237 @@ wherever necessary. Next sections will cover:
 3. Develop and execute the tests
 
 * Setup the hardware
-  If you are working in a large enterprise with own cluster then probably you will have to go through some administrative tickets to provision the hardware. Other option is to quickly launch virtual machines on Amazon AWS cloud and delete when you are done. In this article, I’ll talk about the later.
+  If you are working in a large enterprise with own cluster then
+  probably you will have to go through some administrative tickets to
+  provision the hardware required for the tests. Other option is to
+  quickly launch virtual machines on Amazon AWS cloud and delete when
+  you are done. In this article, I’ll talk about the later.
 
-  Atlassian and AWS have jointly worked on the open-source quickstart scripts that we can readily use for our purpose[fn:6][fn:7].
+  Atlassian and AWS have jointly worked on some open-source
+  quick-start tools that we can be readily used for our
+  purpose[fn:6][fn:7]. You can either create the infrastructure on AWS
+  manually or you may use the quickstart tools to automatically create
+  the required infrastructure. /Remember that AWS infrastructure will
+  incur some cost/.
 
+  Although the quick-start help document is big, it is a must read if
+  you really want to understand what is happening under the hood. You
+  will appreciate the power of automation after going through it. It
+  has some tips to customize the infrastructure as well; especially to
+  reduce some cost. But in my experience, the whole exercise took less
+  than a single working day if you stretch a bit, so you will not save
+  much even if you customize it. I would recommend that you use the
+  quick-start tool as-it-is. And save time instead of cost. In case
+  you follow my recommendation then you just have to clone the
+  =quickstart-atlassian-jira= git-repository[fn:7]. And copy it to a
+  dedicated AWS S3 Bucket. You may push it in any other bucket but it
+  is better to keep it isolated for security reasons as well. On a
+  command-line, you will do just this (I am assuming you have
+  =aws-cli=[fn:8] and =git=[fn:9] installed):
 
+  #+begin_src shell
+    $ git clone --recurse-submodules \
+      https://github.com/aws-quickstart/quickstart-atlassian-jira.git
+
+    $ aws s3 mb s3://<BUCKET_NAME> --region <AWS_REGION>
+
+    $ aws s3 cp quickstart-atlassian-jira \
+      s3://<BUCKET_NAME>/quickstart-atlassian-jira \
+      --recursive --acl public-read
+  #+end_src
+
+  With public access to the above directory inside AWS S3, you can now
+  launch a complete =AWS CloudFormation= without actually thinking
+  about the network design, hardware setup, database setup, Jira
+  Software installation. The steps are simple:
+
+  1. Go to AWS CloudFormation[fn:10]
+  2. Click =Create stack=
+  3. Provide Amazon S3 URL of the
+     =quickstart-jira-dc-with-vpc.template.yaml= file in the above
+     bucket. (https://BUCKET_NAME.s3.amazonaws.com/quickstart-atlassian-jira/templates/quickstart-jira-dc-with-vpc.template.yaml)
+  4. Follow the wizard
+
+  I have collapsed multiple things in the fourth step. Basically, in
+  the wizard, you will have to select the type of AWS virtual machines
+  that you want to use for Jira DC and PostgreSQL installation. Choose
+  database passwords. The whole exercise will take just a day so there
+  is no point in optimizing the default setup. Atlassian advises you
+  to create a development setup first; with smaller AWS
+  instances. t3-medium is sufficient for development. I think you
+  should consider that advice. On a development setup, when you pass
+  95% test-cases then go for the actual tests with the full-fledged
+  enterprise data-set provided by Atlassian.
   
-, I'll enumerate the steps to carry out the performance
-tests. This exercise should be useful to me as well as others. Because
-the activity needs to be conducted from time to time to remain active
-on the Atlassian Marketplace.
+* Setup Jira Software Data Center and your App
+  One of the advantages of using the quick-start setup is that you
+  don't have to install Jira DC yourself. The declarative way in which
+  it is done is really nice and it scales just like that. You can
+  start with just 1-node and based on your load graph of the day or
+  may be week, you can schedule adding and reducing nodes. The setup
+  needs to be configured only once. And the setup is also easy. But in
+  this article we are talking about the scale and performance
+  testing. So all this scaling will happen in a controlled way. We'll
+  increase nodes one-by-one and save the test results for each
+  scenario.
 
-* Prerequisites
-  These are not hard specifics. But if you know about these things
-  then certainly it will speed up your learning.
+  After your first instance is up. Just copy the load-balancer url and
+  open it in your browser. It will take you to the initial Jira setup
+  screen where you specify the site-title, administrator email-id
+  etc. Once this is done, your single-node setup is ready to
+  use.
 
-  1. Setting up PostgreSQL database
-  2. Atlassian Jira installation
-  3. Jira administration
-  4. Jira Universal Plugin Manager (UPM)
-  5. Apache JMeter
-  6. Amazon Web Services Cloud
-
-  Some of the things will be automatically taken care of because of
-  the automated scripts provided by Atlassian and Amazon. But you will
-  appreciated the power of automation only if you know what is and how
-  much happening under the hood.
+  Jira DC setup for development and actual enterprise testing are not
+  different. The only difference is in the infrastructure. You don't
+  need too many nodes at the time of development and you don't need
+  bigger machines. A t3-medium sized single node is sufficient.
   
-* Resources required
-  Before we begin, let us plan on what we actually need, to run the
-  tests. We will be executing the tests on AWS. As per
-  Atlassian[fn:1], we are required to submit the report, after
-  executing tests on 1 node, 2 node and 4 node configuration. For each
-  additional node we need one EC2 instance to run the application;
-  Jira Software in our case.
+  When testing on large data-set, you are required to test on multiple
+  nodes as well. To add more nodes to the above setup:
 
-  | Configuration | 1-node | 2-node | 4-node |
-  |---------------+--------+--------+--------|
-  | EC2 Instances |      1 |      2 |      4 |
-  | DB Instances  |      1 |      1 |      1 |
-  |               |        |        |        |
+  1. Goto AWS CloudFormation console.
+  2. Select the stack and choose update-stack from actions.
+  3. Click next and change the minimum and maximum number of cluster
+     nodes. Done.
+
+  Your are done. In few minutes, your new node will be up. And for the
+  tests to work you will need to synchronise Jira search index on all
+  the nodes. Data Center App Performance Toolkit[fn:11] has a
+  shell-script to synchronise the search index. You are required to do
+  this every time you add a new node.
+
+  Let us now move on to see what are the scenarios that Atlassian
+  wants us to test.
+
+* Develop and execute test-cases
+  We are required to submit test results for five scenarios:
+
+  1. 1-node, without app
+  2. 1-node, with app
+  3. 1-node, with app, with app-specific tests included
+  4. 2-node, with app, with app-specific tests included
+  5. 4-node, with app, with app-specific tests included
+
+  Once your 1-node setup is up and running, import the large data-set
+  provided by Atlassian. This is a huge data-set, as I have mentioned
+  earlier. If the system is performing well with this data-set then
+  the probability is rare that it will face any performance related
+  issues in the customer's deployment.
+
+  Atlassian has prepared a test suite which has large number of tests
+  that simulate 21000 user (200 concurrent), 54500 actions per
+  hour[fn:11]. Test duration for single run is ~45 minutes. You are
+  required to add a few test cases for your app as well. If your app
+  just adds some UI elements then adding selenium tests is all that
+  you need. But if the app adds some APIs then add a few Jmeter calls
+  as well for each API. Code examples are given in the Data Center App
+  Performance Toolkit[fn:11].
+
+  As suggested by Atlassian, do not jump directly to the final
+  testing. First launch a development environment on AWS, with smaller
+  instances, and then build your app-specific test cases on a separate
+  branch in the git repository. Simplest way is to fork the
+  Atlassian's repository and clone from there. Then create a separate
+  branch for adding app-specific tests. If you have more than one app
+  in the Atlassian Marketplace[fn:5] then create a branch for each
+  app. Push all your changes to your remote repository.
+
+  In the development scenario, you should not import the full
+  data-set. Instead create 2 test projects with five-five issues in
+  each. That is sufficient for development. Also you can run the tests
+  directly from your own laptop. You need to set some variables in
+  =dc-app-performance-toolkit/app/jira.yml= to let it know the URL of
+  your Jira DC installation. Once the single-node Jira DC development
+  setup is ready in AWS, just run the performance toolkit.
+
+  #+begin_src shell
+    $ bzt jira.yml
+  #+end_src
+
+  The results are saved in
+  =dc-app-performance-toolkit/app/results/jira/YY-MM-DD-hh-mm-ss=
+  directory. Check =results_summary.log=. Do not proceed with the full
+  data-set tests until you have all the actions with 95+% success
+  rate.
+
+  Once you are done with test developments, launch the full
+  infrastructure with 1-node. Then increase nodes as specified in the
+  full document[fn:12]. It is recommended that you fire the test suite
+  from a virtual machine on AWS, instead of your
+  laptop/workstation. Otherwise things like power or network outage
+  may affect the execution and you will have to start over again. Each
+  run takes a long time ~45 minutes.
+
+  Once you single-node setup is ready, you are required to upload the
+  full data-set. This has three steps:
+
+  1. =populate_db.sh= (~1 hour)
+  2. =upload_attachments.sh= (~2 hours)
+  3. Re-index from Jira Administration screen (~30 minutes)
+     
+  On the AWS execution environment (the VM that we fired for running
+  tests), to save you from lots of installations, Atlassian has
+  created a docker image. You can directly fire the tests from that
+  docker image. So the only installation that you need is docker. In
+  short:
   
-* Setting up resources on Amazon cloud
+  1. Launch an Ubuntu 18.03 LTS VM
+  2. Install docker
+  3. Checkout /your/ dc test repository
+  4. Instead of installing and running bzt, just launch the docker
+     container
+     #+begin_src shell
+       $ docker run --shm-size=4g -v "$PWD:/dc-app-performance-toolkit" \
+         atlassian/dcapt jira.yml
+     #+end_src
+
+  Again the results are save in
+  =dc-app-performance-toolkit/app/results/jira/YY-MM-DD-hh-mm-ss=. You
+  will need to do this five times, once for each scenario.
+  
+* Conclusion
+  It took me 10 hours to complete the full exercise; with some breaks,
+  of course. But the whole thing was worth it. It gives me confidence
+  that our apps will perform really well in the production environment
+  of our customers. Nothing is more satisfying than a happy customer.
+
+  In case you need any help in the above setup then you may join the
+  Slack Community[fn:13] and ask there as well. The community is
+  really active and there is dedicated staff from Atlassian to help
+  you out.
+
+  Enjoy testing!
   
 * Footnotes
 
-[fn:7] Jira DC on AWS - Quick Start Reference Deployment [Github Repo]
+[fn:13] Slack Community for Atlassian Performance Tools -
+https://atlassian-performance.slack.com
+
+[fn:12] Data Center App Performance Toolkit User Guide For Jira -
+https://developer.atlassian.com/platform/marketplace/dc-apps-performance-toolkit-user-guide-jira/
+
+[fn:11] Data Center App Performance Toolkit -
+https://github.com/atlassian/dc-app-performance-toolkit
+
+[fn:10] AWS CloudFormation -
+https://console.aws.amazon.com/cloudformation
+
+[fn:9] Git -
+https://git-scm.com/
+
+[fn:8] AWS CLI -
+https://aws.amazon.com/cli/
+
+[fn:7] Jira DC on AWS - Quick Start Reference Deployment [Github Repo] -
 https://github.com/aws-quickstart/quickstart-atlassian-jira
 
-[fn:6] Jira DC on AWS - Quick Start Reference Deployment
+[fn:6] Jira DC on AWS - Quick Start Reference Deployment -
 https://aws-quickstart.github.io/quickstart-atlassian-jira/
 
-[fn:5] Atlassian Marketplace
+[fn:5] Atlassian Marketplace -
 https://marketplace.atlassian.com/
 
-[fn:4] Testing your app on a large DC
+[fn:4] Testing your app on a large DC -
 https://developer.atlassian.com/platform/marketplace/testing-your-app-with-a-large-data-set/
 
 [fn:3] LXP - Links Explorer Traceability & Hierarchy -
