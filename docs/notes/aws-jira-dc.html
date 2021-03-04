@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-28 Sun 18:08 -->
+<!-- 2021-03-04 Thu 13:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Performance and scale testing of your App on Jira DC</title>
@@ -296,7 +296,7 @@ you are done. In this article, I’ll talk about the later.
 
 <p>
 Atlassian and AWS have jointly worked on some open-source
-quick-start tools that we can be readily used for our
+quick-start tools that can be readily used for our
 purpose<sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup><sup>, </sup><sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup>. You can either create the infrastructure on AWS
 manually or you may use the quickstart tools to automatically create
 the required infrastructure. <i>Remember that AWS infrastructure will
@@ -351,14 +351,13 @@ bucket. (<a href="https://bucket_name.s3.amazonaws.com/quickstart-atlassian-jira
 <p>
 I have collapsed multiple things in the fourth step. Basically, in
 the wizard, you will have to select the type of AWS virtual machines
-that you want to use for Jira DC and PostgreSQL installation. Choose
-database passwords. The whole exercise will take just a day so there
-is no point in optimizing the default setup. Atlassian advises you
-to create a development setup first; with smaller AWS
-instances. t3-medium is sufficient for development. I think you
-should consider that advice. On a development setup, when you pass
-95% test-cases then go for the actual tests with the full-fledged
-enterprise data-set provided by Atlassian.
+that you want to use for Jira DC and PostgreSQL installation and
+setup database passwords. Atlassian advises you to create a
+development setup first; with smaller AWS instances. t3-medium is
+sufficient for development. I think you should consider that
+advice. On a development setup, when you pass 95% test-cases then go
+for the actual tests with the full-fledged enterprise class data-set
+provided by Atlassian.
 </p>
 </div>
 </div>
@@ -371,7 +370,7 @@ One of the advantages of using the quick-start setup is that you
 don't have to install Jira DC yourself. The declarative way in which
 it is done is really nice and it scales just like that. You can
 start with just 1-node and based on your load graph of the day or
-may be week, you can schedule adding and reducing nodes. The setup
+may be a week, you can schedule adding and reducing nodes. The setup
 needs to be configured only once. And the setup is also easy. But in
 this article we are talking about the scale and performance
 testing. So all this scaling will happen in a controlled way. We'll
@@ -395,8 +394,8 @@ bigger machines. A t3-medium sized single node is sufficient.
 </p>
 
 <p>
-When testing on large data-set, you are required to test on multiple
-nodes as well. To add more nodes to the above setup:
+When testing on the large data-set, you are required to test on
+multiple nodes as well. To add more nodes to the above setup:
 </p>
 
 <ol class="org-ol">
