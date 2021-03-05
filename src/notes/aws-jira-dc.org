@@ -56,7 +56,7 @@ wherever necessary. Next sections will cover:
   probably you will have to go through some administrative tickets to
   provision the hardware required for the tests. Other option is to
   quickly launch virtual machines on Amazon AWS cloud and delete when
-  you are done. In this article, I’ll talk about the later.
+  you are done. In this article, I’ll talk about the latter.
 
   Atlassian and AWS have jointly worked on some open-source
   quick-start tools that can be readily used for our
@@ -144,7 +144,7 @@ wherever necessary. Next sections will cover:
   3. Click next and change the minimum and maximum number of cluster
      nodes. Done.
 
-  Your are done. In few minutes, your new node will be up. And for the
+  You are done. In few minutes, your new node will be up. And for the
   tests to work you will need to synchronise Jira search index on all
   the nodes. Data Center App Performance Toolkit[fn:11] has a
   shell-script to synchronise the search index. You are required to do
