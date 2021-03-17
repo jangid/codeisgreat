@@ -13,6 +13,24 @@ a suggestion for me or you just want to say hello to me then write an
 email at _my.firstname@domain.of.this.web.site_.
 
 * New writeup [[file:writings.html][(full list]])
+
+** [[file:notes/aws-jira-dc.html][Performance and scale testing of your App on Jira DC]]
+
+   Those who develop apps for the Atlassian Marketplace, must have
+   come across this requirement that their apps must meet a prescribed
+   performance and scalability criteria. Well, we also got this
+   notice.
+
+   I started to explore, thinking where to start. And found that
+   Atlassian has very nice documentation for conducting this
+   exercise. In fact if you follow the guidelines religiously, you
+   will be through without any other help.
+
+   I have written this article to share my experience. Actually, I
+   have taken notes so that I can refer to it later for conducting
+   similar tests. I am sure you will like it.
+
+   
 ** [[file:notes/emacs-macos-contacts.html][MacOS Contacts in Emacs]]
 
    I was browsing the =etc/NEWS= file from the latest emacs source
