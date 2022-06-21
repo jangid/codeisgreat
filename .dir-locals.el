@@ -5,11 +5,11 @@
 
 ;;; Code:
 
-((nil . ((fill-column . 80)
-		 (mode . auto-fill)))
- (org-mode
+((nil
   .
-  ((org-publish-project-alist
+  ((fill-column . 80)
+   (mode . auto-fill)
+   (org-publish-project-alist
     .
     (("pages"
       :base-directory  "~/work/personal/codeisgreat/src/"
@@ -33,6 +33,11 @@
       :html-postamble-format (("en" "<p class=\"creator\">Created with %c</p>"))
       :section-numbers nil
       :html-indent t)
+     ("css"
+      :base-directory "~/work/personal/codeisgreat/src/css"
+      :base-extension "css"
+      :publishing-directory "~/work/personal/codeisgreat/docs/css"
+      :publishing-function org-publish-attachment)
      ("images"
       :base-directory "~/work/personal/codeisgreat/src/images"
       :base-extension "jpeg\\|jpg\\|gif\\|png"
@@ -43,4 +48,4 @@
       :publishing-directory "~/work/personal/codeisgreat/docs/other"
       :publishing-function org-publish-attachment)
      ("website"
-      :components ("pages" "notes" "images" "other")))))))
+      :components ("pages" "notes" "images" "css" "other")))))))
