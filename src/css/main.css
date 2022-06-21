@@ -7,3 +7,7 @@
 #postamble {
 	border-top: 1px solid red;
 }
+
+p img {
+	max-width: 80%;
+}

@@ -11,10 +11,14 @@ you just want to say hello to me then write an email at
 _my.firstname@domain.of.this.web.site_. Or connect with me on [[https://twitter.com/jangid][Twitter]].
 
 * [[file:notes/colors-of-web.org][Colors of Web]]
+<2022-06-21 Tue>
+
 Why some designers are now using hsl() instead of rgb() for color
 settings in CSS? I have tried to explain.
 
 * [[file:notes/aws-jira-dc.org][Performance and scale testing of your App on Jira DC]]
+<2021-03-05 Fri>
+
 Those who develop apps for the Atlassian Marketplace, must have come
 across this requirement that their apps must meet a prescribed
 performance and scalability criteria. Well, we also got this notice.
@@ -29,6 +33,8 @@ taken notes so that I can refer to it later for conducting similar
 tests. I am sure you will like it.
    
 * [[file:notes/emacs-macos-contacts.org][MacOS Contacts in Emacs]]
+<2021-01-23 Sat>
+
 I was browsing the =etc/NEWS= file from the latest emacs source code
 and found this useful feature. Now there is a builtin EUDC backend for
 MacOS contacts. My online contacts book is connected to macOS contacts

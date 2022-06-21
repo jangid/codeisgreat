@@ -31,6 +31,7 @@ grey.
 
 [[file:../images/saturation_2.jpeg]]
 
+
 It doesn’t matter which color is selected (hue). When the saturation is 0% it
 will look grey. And when the saturation is 100% the color has full intensity;
 like a brand new object.
