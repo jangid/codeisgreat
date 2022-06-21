@@ -1,6 +1,4 @@
 #+TITLE: Performance and scale testing of your App on Jira DC
-#+OPTIONS: num:nil, html-postamble:nil, 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/main.css" />
 
 * Introduction
   If you have apps listed on Atlassian Marketplace then you might have

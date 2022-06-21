@@ -2,4 +2,8 @@ Gemfile.lock
 _site
 src/*.html
 src/notes/*.html
+src/notes/*.pdf
+src/notes/*.tex
 cron.sh
+*~
+.DS_Store

@@ -1,7 +1,5 @@
 #+TITLE: MacOS Contacts in Emacs
 #+SUBTITLE: (Note that this works only on emacs-28, which is not yet released)
-#+OPTIONS: toc:nil, num:nil, html-postamble:nil, 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/main.css" />
 
 Following code in your startup file will enable macOS contacts access
 via built-in EUDC feature of Emacs. No need for any extra package for
