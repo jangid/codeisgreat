@@ -30,13 +30,8 @@ tests. I am sure you will like it.
    
 * [[file:notes/emacs-macos-contacts.org][MacOS Contacts in Emacs]]
 I was browsing the =etc/NEWS= file from the latest emacs source code
-and found this useful feature. Currently my work requires me to work
-on macOS so this is kind of essential for me to fetch contacts into
-=Gnus=. Because that is what I use for all my emails and news.
-
-Now that it is a builtin feature, no need for any extra package for
-email address management and autocompletion. My online contacts book
-is connected to macOS contacts via =CardDav= and now =Emacs= is also
-connected to that.
+and found this useful feature. Now there is a builtin EUDC backend for
+MacOS contacts. My online contacts book is connected to macOS contacts
+via =CardDav= and now =Emacs= is also connected to that.
 
 
