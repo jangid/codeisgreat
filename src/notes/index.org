@@ -1,0 +1,5 @@
+#+title: Notes
+
+- [[file:colors-of-web.org][Colors of Web]]
+- [[file:aws-jira-dc.org][Performance and scale testing of your App on Jira DC]]
+- [[file:emacs-macos-contacts.org][MacOS Contacts in Emacs]]
