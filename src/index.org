@@ -1,43 +1,46 @@
-#+TITLE: Hello. I'm Pankaj Jangid
-#+SUBTITLE: I read code. I write code.
-
-This is my /*own*/ space. Follow ... oops! ... bookmark this page and
-check once in a while to see what I am currently working on. Sorry if
-I sound like a self-obsessed person. But there is no other place (on
-the WWW) where I find it easy to write; may be because of absense of
-my writing toolbox - /Emacs/. And perhaps I protect /your/ privacy in
-the process 😎. If you have any comments or got a suggestion for me or
-you just want to say hello to me then write an email at
-_my.firstname@domain.of.this.web.site_. Or connect with me on [[https://twitter.com/jangid][Twitter]].
+This is my /*own*/ personal space. Follow—oops! I mean, bookmark this
+page and check back every once in a while to see what I'm currently
+working on. Forgive me if I sound self-absorbed, but honestly, no
+other place on the web feels as comfortable to me for writing. Perhaps
+that's because I don't have easy access everywhere to my essential
+writing toolbox - /*Emacs*/. Plus, I might actually be protecting
+/*your*/ privacy in the process. 😎
+ 
+If you have any suggestions, comments, or just feel like saying hello,
+drop me an email at: _my.firstname@domain.of.this.web.site_. You're
+also welcome to connect with me on [[https://x.com/jangid][X]].
 
 * [[file:notes/colors-of-web.org][Colors of Web]]
 <2022-06-21 Tue>
 
-Why some designers are now using hsl() instead of rgb() for color
-settings in CSS? I have tried to explain.
+Ever wondered why so many designers nowadays prefer using ~hsl()~
+instead of ~rgb()~ for defining colors in CSS? I've explored this
+topic in detail and here's my take on it.
 
 * [[file:notes/aws-jira-dc.org][Performance and scale testing of your App on Jira DC]]
 <2021-03-05 Fri>
 
-Those who develop apps for the Atlassian Marketplace, must have come
-across this requirement that their apps must meet a prescribed
-performance and scalability criteria. Well, we also got this notice.
+If you develop apps for the Atlassian Marketplace, you've probably
+come across requirements related to performance and scalability
+testing. We recently received such a notice too.
 
-I started to explore, thinking where to start. And found that
-Atlassian has very nice documentation for conducting this exercise. In
-fact if you follow the guidelines religiously, you will be through
-without any other help.
+Initially, I wasn't sure where to begin, but quickly discovered that
+Atlassian has extensive documentation outlining this process clearly
+and helpfully. In fact, by following their guidelines carefully,
+you'll navigate the entire process smoothly.
 
-I have written this article to share my experience. Actually, I have
-taken notes so that I can refer to it later for conducting similar
-tests. I am sure you will like it.
+I documented my journey here to share my personal experience. Consider
+these detailed notes; they'll also help remind me exactly how to
+perform these tests efficiently in the future. I hope you find them
+helpful too.
    
 * [[file:notes/emacs-macos-contacts.org][MacOS Contacts in Emacs]]
 <2021-01-23 Sat>
 
-I was browsing the =etc/NEWS= file from the latest emacs source code
-and found this useful feature. Now there is a builtin EUDC backend for
-MacOS contacts. My online contacts book is connected to macOS contacts
-via =CardDav= and now =Emacs= is also connected to that.
+While browsing through the ~etc/NEWS~ file in the latest Emacs source
+code, I came across a particularly useful feature: Emacs now has a
+built-in EUDC backend for MacOS contacts! My online contact list is
+synced with macOS Contacts via ~CardDav~, and, with this discovery,
+Emacs integrates seamlessly as well.
 
 
