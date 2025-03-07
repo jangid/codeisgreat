@@ -7,8 +7,8 @@ writing toolbox - /*Emacs*/. Plus, I might actually be protecting
 /*your*/ privacy in the process. 😎
  
 If you have any suggestions, comments, or just feel like saying hello,
-drop me an email at: _my.firstname@domain.of.this.web.site_. You're
-also welcome to connect with me on [[https://x.com/jangid][X]].
+drop me an email at: _pankaj@..._. You're also welcome to connect with
+me on [[https://x.com/jangid][X]].
 
 * [[file:notes/colors-of-web.org][Colors of Web]]
 <2022-06-21 Tue>
