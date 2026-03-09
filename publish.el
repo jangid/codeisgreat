@@ -19,8 +19,12 @@
 ;; Disable interactive prompts in batch mode
 (setq org-confirm-babel-evaluate nil)
 
-;; Force republish everything (ignore cache)
-(setq org-publish-use-timestamps-flag nil)
+;; Only rebuild changed files (use org's timestamp cache)
+(setq org-publish-use-timestamps-flag t)
+
+;; Navigation bar HTML
+(defvar codeisgreat-nav
+  "<nav class=\"site-nav\"><a href=\"/\">Home</a> | <a href=\"/notes/\">Notes</a></nav>")
 
 (setq org-publish-project-alist
       `(("pages"
@@ -29,7 +33,7 @@
          :publishing-function org-html-publish-to-html
          :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/main.css\" />"
          :with-toc nil
-         :html-preamble nil
+         :html-preamble ,codeisgreat-nav
          :html-postamble t
          :html-postamble-format (("en" "<p class=\"creator\">Created with %c</p>"))
          :section-numbers nil
@@ -40,7 +44,7 @@
          :publishing-function org-html-publish-to-html
          :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/main.css\" />"
          :with-toc nil
-         :html-preamble nil
+         :html-preamble ,codeisgreat-nav
          :html-postamble t
          :html-postamble-format (("en" "<p class=\"creator\">Created with %c</p>"))
          :section-numbers nil
@@ -64,5 +68,5 @@
 
 ;; Publish
 (message "Publishing codeisgreat.org from %s to %s" codeisgreat-src codeisgreat-docs)
-(org-publish "website" t)
+(org-publish "website")
 (message "Done.")

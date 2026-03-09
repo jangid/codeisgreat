@@ -3,7 +3,7 @@
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
   <head>
-    <!-- 2026-03-09 Mon 16:46 -->
+    <!-- 2026-03-09 Mon 17:23 -->
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Performance and scale testing of your App on Jira DC</title>
@@ -196,6 +196,9 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
   </head>
   <body>
+    <div id="preamble" class="status">
+      <nav class="site-nav"><a href="/">Home</a> | <a href="/notes/">Notes</a></nav>
+    </div>
     <div id="content" class="content">
       <h1 class="title">Performance and scale testing of your App on Jira DC</h1>
       <div id="outline-container-orgd4bdb58" class="outline-2">
@@ -218,21 +221,21 @@
 	    We have two apps on the marketplace - (1) RMsis - Requirement
 	    Management for Jira<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup> (2) LXP - Links Explorer Traceability &amp;
 	    Hierarchy<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>. Both of them are available for Jira Data Center and
-	    earstwhile Jira Server edition. LXP is available on the cloud as
+	    erstwhile Jira Server edition. LXP is available on the cloud as
 	    well. I have gone through the performance and scale test for one
 	    app. Hence I am writing down my experience here. It will definitely
 	    be useful when I go for another round for another app.
 	  </p>
 
 	  <p>
-	    This article is not to scare you about the bechmarking test but to
+	    This article is not to scare you about the benchmarking test but to
 	    encourage you to go for it. Atlassian has done a great job of
 	    documenting the steps<sup><a id="fnr.2.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>. This post will serve as an add-on to
 	    get you started. I'll describe the concepts involved.
 	  </p>
 
 	  <p>
-	    A well known fact is that the Jira Data Centre or Jira DC is
+	    A well-known fact is that the Jira Data Centre or Jira DC is
 	    designed to serve a lot more concurrent users under enterprise load
 	    than you would normally do with server edition. Basically, you can
 	    add high performing nodes as your usage goes beyond a limit. You can
@@ -360,7 +363,7 @@
 	  </p>
 
 	  <p>
-	    After your first instance is up. Just copy the load-balancer url and
+	    After your first instance is up, just copy the load-balancer URL and
 	    open it in your browser. It will take you to the initial Jira setup
 	    screen where you specify the site-title, administrator email-id
 	    etc. Once this is done, your single-node setup is ready to
@@ -387,7 +390,7 @@
 	  </ol>
 
 	  <p>
-	    You are done. In few minutes, your new node will be up. And for the
+	    You are done. In a few minutes, your new node will be up. And for the
 	    tests to work you will need to synchronise Jira search index on all
 	    the nodes. Data Center App Performance Toolkit<sup><a id="fnr.11" class="footref" href="#fn.11" role="doc-backlink">11</a></sup> has a
 	    shell-script to synchronise the search index. You are required to do
@@ -479,7 +482,7 @@
 	  </p>
 
 	  <p>
-	    Once you single-node setup is ready, you are required to upload the
+	    Once your single-node setup is ready, you are required to upload the
 	    full data-set. This has three steps:
 	  </p>
 
@@ -513,7 +516,7 @@
 	  </ol>
 
 	  <p>
-	    Again the results are save in
+	    Again the results are saved in
 	    <code>dc-app-performance-toolkit/app/results/jira/YY-MM-DD-hh-mm-ss</code>. You
 	    will need to do this five times, once for each scenario.
 	  </p>

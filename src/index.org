@@ -1,46 +1,15 @@
-This is my /*own*/ personal space. Follow—oops! I mean, bookmark this
-page and check back every once in a while to see what I'm currently
-working on. Forgive me if I sound self-absorbed, but honestly, no
-other place on the web feels as comfortable to me for writing. Perhaps
-that's because I don't have easy access everywhere to my essential
-writing toolbox - /*Emacs*/. Plus, I might actually be protecting
-/*your*/ privacy in the process. 😎
- 
+#+title: Pankaj Jangid
+#+OPTIONS: toc:nil
+
+This is my /own/ personal space. Bookmark this page and check back
+every once in a while to see what I'm working on. Forgive me if I
+sound self-absorbed, but honestly, no other place on the web feels as
+comfortable to me for writing. Perhaps that's because I don't have
+easy access everywhere to my essential writing toolbox - /Emacs/.
+Plus, I might actually be protecting /your/ privacy in the process.
+
 If you have any suggestions, comments, or just feel like saying hello,
-drop me an email at: _pankaj@..._. You're also welcome to connect with
+drop me an email at: /pankaj@.../. You're also welcome to connect with
 me on [[https://x.com/jangid][X]].
 
-* [[file:notes/colors-of-web.org][Colors of Web]]
-<2022-06-21 Tue>
-
-Ever wondered why so many designers nowadays prefer using ~hsl()~
-instead of ~rgb()~ for defining colors in CSS? I've explored this
-topic in detail and here's my take on it.
-
-* [[file:notes/aws-jira-dc.org][Performance and scale testing of your App on Jira DC]]
-<2021-03-05 Fri>
-
-If you develop apps for the Atlassian Marketplace, you've probably
-come across requirements related to performance and scalability
-testing. We recently received such a notice too.
-
-Initially, I wasn't sure where to begin, but quickly discovered that
-Atlassian has extensive documentation outlining this process clearly
-and helpfully. In fact, by following their guidelines carefully,
-you'll navigate the entire process smoothly.
-
-I documented my journey here to share my personal experience. Consider
-these detailed notes; they'll also help remind me exactly how to
-perform these tests efficiently in the future. I hope you find them
-helpful too.
-   
-* [[file:notes/emacs-macos-contacts.org][MacOS Contacts in Emacs]]
-<2021-01-23 Sat>
-
-While browsing through the ~etc/NEWS~ file in the latest Emacs source
-code, I came across a particularly useful feature: Emacs now has a
-built-in EUDC backend for MacOS contacts! My online contact list is
-synced with macOS Contacts via ~CardDav~, and, with this discovery,
-Emacs integrates seamlessly as well.
-
-
+Head over to [[file:notes/index.org][Notes]] to read what I've been writing about.

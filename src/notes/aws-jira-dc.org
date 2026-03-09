@@ -15,17 +15,17 @@
   We have two apps on the marketplace - (1) RMsis - Requirement
   Management for Jira[fn:2] (2) LXP - Links Explorer Traceability &
   Hierarchy[fn:3]. Both of them are available for Jira Data Center and
-  earstwhile Jira Server edition. LXP is available on the cloud as
+  erstwhile Jira Server edition. LXP is available on the cloud as
   well. I have gone through the performance and scale test for one
   app. Hence I am writing down my experience here. It will definitely
   be useful when I go for another round for another app.
 
-  This article is not to scare you about the bechmarking test but to
+  This article is not to scare you about the benchmarking test but to
   encourage you to go for it. Atlassian has done a great job of
   documenting the steps[fn:4]. This post will serve as an add-on to
   get you started. I'll describe the concepts involved.
 
-  A well known fact is that the Jira Data Centre or Jira DC is
+  A well-known fact is that the Jira Data Centre or Jira DC is
   designed to serve a lot more concurrent users under enterprise load
   than you would normally do with server edition. Basically, you can
   add high performing nodes as your usage goes beyond a limit. You can
@@ -124,7 +124,7 @@
   increase nodes one-by-one and save the test results for each
   scenario.
 
-  After your first instance is up. Just copy the load-balancer url and
+  After your first instance is up, just copy the load-balancer URL and
   open it in your browser. It will take you to the initial Jira setup
   screen where you specify the site-title, administrator email-id
   etc. Once this is done, your single-node setup is ready to
@@ -143,7 +143,7 @@
   3. Click next and change the minimum and maximum number of cluster
      nodes. Done.
 
-  You are done. In few minutes, your new node will be up. And for the
+  You are done. In a few minutes, your new node will be up. And for the
   tests to work you will need to synchronise Jira search index on all
   the nodes. Data Center App Performance Toolkit[fn:11] has a
   shell-script to synchronise the search index. You are required to do
@@ -211,7 +211,7 @@
   may affect the execution and you will have to start over again. Each
   run takes a long time ~45 minutes.
 
-  Once you single-node setup is ready, you are required to upload the
+  Once your single-node setup is ready, you are required to upload the
   full data-set. This has three steps:
 
   1. =populate_db.sh= (~1 hour)
@@ -234,7 +234,7 @@
          atlassian/dcapt jira.yml
      #+end_src
 
-  Again the results are save in
+  Again the results are saved in
   =dc-app-performance-toolkit/app/results/jira/YY-MM-DD-hh-mm-ss=. You
   will need to do this five times, once for each scenario.
   
