@@ -13,3 +13,5 @@ drop me an email at: /pankaj@.../. You're also welcome to connect with
 me on [[https://x.com/jangid][X]].
 
 Head over to [[file:notes/index.org][Notes]] to read what I've been writing about.
+
+Recent: [[file:notes/space-sector-processes.org][Process Discipline in India's Space Sector]], [[file:notes/colors-of-web.org][Colors of Web]]

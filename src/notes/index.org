@@ -1,23 +1,7 @@
 #+title: Notes
 #+OPTIONS: toc:nil
 
-* [[file:colors-of-web.org][Colors of Web]]
-<2022-06-21 Tue>
-
-Ever wondered why so many designers nowadays prefer using ~hsl()~
-instead of ~rgb()~ for defining colors in CSS? I've explored this
-topic in detail and here's my take on it.
-
-* [[file:aws-jira-dc.org][Performance and scale testing of your App on Jira DC]]
-<2021-03-05 Fri>
-
-If you develop apps for the Atlassian Marketplace, you've probably
-come across requirements related to performance and scalability
-testing. I documented my journey to share my personal experience.
-
-* [[file:emacs-macos-contacts.org][MacOS Contacts in Emacs]]
-<2021-01-23 Sat>
-
-Emacs now has a built-in EUDC backend for MacOS contacts. My online
-contact list is synced with macOS Contacts via ~CardDav~, and Emacs
-integrates seamlessly.
+- [[file:space-sector-processes.org][Process Discipline in India's Space Sector]] -- /2026-03-09/
+- [[file:colors-of-web.org][Colors of Web]] -- /2022-06-21/
+- [[file:aws-jira-dc.org][Performance and scale testing of your App on Jira DC]] -- /2021-03-05/
+- [[file:emacs-macos-contacts.org][MacOS Contacts in Emacs]] -- /2021-01-23/
