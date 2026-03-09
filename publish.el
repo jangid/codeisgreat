@@ -19,8 +19,9 @@
 ;; Disable interactive prompts in batch mode
 (setq org-confirm-babel-evaluate nil)
 
-;; Only rebuild changed files (use org's timestamp cache)
-(setq org-publish-use-timestamps-flag t)
+;; Only rebuild changed files unless FORCE_PUBLISH is set
+(setq org-publish-use-timestamps-flag
+      (not (getenv "FORCE_PUBLISH")))
 
 ;; Navigation bar HTML
 (defvar codeisgreat-nav
@@ -44,9 +45,10 @@
          :publishing-function org-html-publish-to-html
          :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/main.css\" />"
          :with-toc nil
+         :with-date t
          :html-preamble ,codeisgreat-nav
          :html-postamble t
-         :html-postamble-format (("en" "<p class=\"creator\">Created with %c</p>"))
+         :html-postamble-format (("en" "<p class=\"date\">Published: %d</p><p class=\"creator\">Created with %c</p>"))
          :section-numbers nil
          :html-indent t)
         ("css"

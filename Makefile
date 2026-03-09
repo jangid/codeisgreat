@@ -5,7 +5,8 @@ EMACS = /Applications/Emacs.app/Contents/MacOS/Emacs
 publish:
 	$(EMACS) --batch -l publish.el
 
-rebuild: clean publish
+rebuild: clean
+	FORCE_PUBLISH=1 $(EMACS) --batch -l publish.el
 
 serve: publish
 	@echo "Serving at http://localhost:8000"

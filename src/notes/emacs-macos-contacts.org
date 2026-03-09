@@ -1,4 +1,5 @@
 #+TITLE: MacOS Contacts in Emacs
+#+DATE: 2021-01-23
 #+SUBTITLE: (Note that this requires Emacs 28 or later)
 
 Following code in your startup file will enable macOS contacts access

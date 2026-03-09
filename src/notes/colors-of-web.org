@@ -1,4 +1,5 @@
 #+TITLE: Colors of Web
+#+DATE: 2022-06-21
 
 Hue-Saturation-Luminosity (HSL); and not just Red-Green-Blue (RGB).
 
